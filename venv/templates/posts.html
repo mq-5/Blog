@@ -1,0 +1,25 @@
+{% extends "layout.html" %} {% block content %}
+<h2 class="text-center header">All posts</h2>
+<ul>
+  {% for post in posts %}
+  <li class="post">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="post-title">{{ post.title }}</h5>
+        <p>{{ post.body }}</p>
+        <small class="font-italic">
+          {{ post.author_name }} at {{ post.updated_on }}</small
+        >
+        <br />
+        <a class="card-link edit mt-5" href="{{ '/edit/%s' % post.id }}"
+          >Edit</a
+        >
+        <a class="card-link del mt-5" href="{{ '/delete/%s' % post.id }}"
+          >Delete</a
+        >
+      </div>
+    </div>
+  </li>
+  {% endfor %}
+</ul>
+{% endblock %}

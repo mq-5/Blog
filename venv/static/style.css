@@ -1,0 +1,43 @@
+* {
+  font-family: "Livvic", sans-serif;
+}
+
+.navbar-brand {
+  color: #5a6d79;
+  font-family: "Chilanka", cursive;
+}
+
+li {
+  list-style-type: none;
+}
+
+li.post,
+.flashes li {
+  margin: 1rem;
+}
+
+.header {
+  color: #5a6d79;
+  font-family: "Chilanka", cursive;
+  margin: 2rem;
+  text-align: center;
+}
+
+.post-title {
+  color: #a4a8d1;
+}
+
+#submit {
+  background-color: #cdcfe5;
+}
+
+.card a.edit {
+  color: #8cabbe !important;
+}
+.card a.edit:hover {
+  color: #333f46 !important;
+}
+
+a.del {
+  color: #333f46 !important;
+}
